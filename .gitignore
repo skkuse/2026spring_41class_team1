@@ -1,0 +1,51 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Build outputs
+dist
+dist-ssr
+build
+*.local
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+Thumbs.db
+
+# Env files (절대 커밋 금지)
+.env
+.env.local
+.env.*.local
+
+# Backend
+backend/venv/
+backend/restaurant.db
+backend/__pycache__/
+backend/app/__pycache__/
+backend/app/**/__pycache__/
+backend/**/*.pyc
+
+# Test
+coverage
+*.lcov
+
+# TypeScript
+*.tsbuildinfo

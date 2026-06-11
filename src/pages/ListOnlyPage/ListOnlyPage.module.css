@@ -1,0 +1,30 @@
+.page { min-height: 100vh; background: #f9fafb; display: flex; flex-direction: column; }
+
+.header {
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 20px; background: #fff;
+  border-bottom: 1px solid #e5e7eb; flex-shrink: 0;
+}
+.backBtn {
+  background: none; border: 1px solid #e5e7eb; border-radius: 8px;
+  padding: 6px 12px; font-size: 13px; cursor: pointer; color: #374151;
+}
+.backBtn:hover { background: #f3f4f6; }
+.title  { font-weight: 700; font-size: 15px; color: #111827; flex: 1; }
+.badge  { background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+
+.notice {
+  background: #fffbeb; border-bottom: 1px solid #fde68a;
+  padding: 10px 20px; font-size: 13px; color: #92400e;
+}
+
+.main {
+  max-width: 720px; width: 100%; margin: 0 auto;
+  padding: 20px; display: flex; flex-direction: column; gap: 16px;
+}
+
+.listHeader { display: flex; align-items: center; }
+.listTitle  { font-size: 14px; font-weight: 700; color: #374151; }
+.count      { font-weight: 400; color: #9ca3af; font-size: 12px; }
+
+.list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }

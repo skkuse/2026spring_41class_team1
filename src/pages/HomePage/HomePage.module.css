@@ -1,0 +1,297 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #f9fafb;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 20px;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  flex-shrink: 0;
+}
+
+.backBtn {
+  background: none;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #374151;
+}
+
+.backBtn:hover { background: #f3f4f6; }
+
+.campusTitle {
+  font-weight: 700;
+  font-size: 16px;
+  color: #111827;
+  flex: 1;
+}
+
+.viewToggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.toggleBtn {
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.toggleBtn.active {
+  background: #2563eb;
+  color: #fff;
+  border-color: #2563eb;
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* 사이드바 */
+.sidebar {
+  width: 320px;
+  flex-shrink: 0;
+  overflow-y: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-right: 1px solid #e5e7eb;
+  background: #fff;
+  transition: width 0.2s ease;
+}
+
+.sidebarWide {
+  width: 440px;
+}
+
+/* 인라인 상세 패널 */
+.detailPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.detailBackBtn {
+  background: none;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #374151;
+  align-self: flex-start;
+}
+.detailBackBtn:hover { background: #f3f4f6; }
+
+.detailLoading {
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+.detailName {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.detailMeta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.detailAddr {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.detailTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.detailSection {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 10px;
+  border-top: 1px solid #f3f4f6;
+}
+
+.detailSectionTitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.detailSummary {
+  font-size: 13px;
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.detailTrust {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.detailTrustScore {
+  font-size: 22px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.credibilityComment {
+  margin-top: 8px;
+  padding: 10px 12px;
+  background: #f0f4ff;
+  border-left: 3px solid #2563eb;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.credibilityComment p {
+  font-size: 12px;
+  color: #374151;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.credibilityComment strong {
+  color: #1d4ed8;
+}
+
+.detailInfoList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: #4b5563;
+}
+
+.detailLabel {
+  font-weight: 600;
+  margin-right: 6px;
+  color: #374151;
+}
+
+.menuChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.menuChip {
+  background: #f3f4f6;
+  border-radius: 6px;
+  padding: 3px 10px;
+  font-size: 12px;
+  color: #374151;
+}
+
+.detailFullBtn {
+  margin-top: 8px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 13px;
+  cursor: pointer;
+  text-align: center;
+}
+.detailFullBtn:hover { background: #1d4ed8; }
+
+.sectionTitle {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #374151;
+}
+
+
+.listSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.count {
+  font-weight: 400;
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+
+.restaurantList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+/* 리스트 전용 뷰 (지도 숨김) */
+.listView {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* 지도 영역 */
+.mapArea {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6;
+}
+
+
+@media (max-width: 768px) {
+  .body {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+}
