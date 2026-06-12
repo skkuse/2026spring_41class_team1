@@ -49,3 +49,21 @@ coverage
 
 # TypeScript
 *.tsbuildinfo
+
+# Secrets
+.env
+*.env
+.env.*
+*OPENAI_API_KEY*
+*KAKAO*
+*token*
+*secret*
+
+# Python / Notebook
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+
+# Colab temp
+sample_data/

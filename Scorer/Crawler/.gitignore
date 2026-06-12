@@ -1,0 +1,9 @@
+.env
+__pycache__/
+.ipynb_checkpoints/
+*.log
+
+
+# Debug / temporary artifacts
+data/debug/
+data/Untitled*.ipynb
