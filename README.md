@@ -222,7 +222,7 @@ npm run dev
 |---|---|
 | URL | http://localhost:3000/admin/login |
 | 아이디 | `admin` |
-| 비밀번호 | `password123` |
+| 비밀번호 | `123456` |
 
 > 운영 환경에서는 `.env`의 `ADMIN_PASSWORD`, `ADMIN_JWT_SECRET` 반드시 변경
 
@@ -235,7 +235,7 @@ npm run dev
 | 변수 | 설명 | 기본값 |
 |---|---|---|
 | `ADMIN_USERNAME` | 관리자 아이디 | `admin` |
-| `ADMIN_PASSWORD` | 관리자 비밀번호 | `password123` |
+| `ADMIN_PASSWORD` | 관리자 비밀번호 | `123456` |
 | `ADMIN_JWT_SECRET` | JWT 서명 키 | `dev-secret-change-me` |
 | `DATABASE_URL` | DB 연결 문자열 (미설정 시 SQLite) | — |
 
